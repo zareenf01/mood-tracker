@@ -11,7 +11,6 @@ export default function TodayView({
   currentView,
   startBreathingExercise,
 }: TodayViewProps) {
-  // Calendar data
   const weekdays = [
     { day: "Mon", date: 12, active: false },
     { day: "Tue", date: 13, active: false },
@@ -20,7 +19,6 @@ export default function TodayView({
     { day: "Fri", date: 16, active: false },
   ];
 
-  // Activities data
   const activities = [
     {
       name: "Breathing Exercise",
@@ -39,7 +37,6 @@ export default function TodayView({
     },
   ];
 
-  // Program details
   const programDetails = [
     {
       name: "Guided Meditation",

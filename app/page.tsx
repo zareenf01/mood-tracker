@@ -3,8 +3,6 @@ import { useState, useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SplashScreen from "@/components/splash-screen";
-
-// Import components
 import Sidebar from "@/components/mood/sidebar";
 import MobileNavigation from "@/components/mood/mobileNav";
 import BackgroundElements from "@/components/mood/bg-element";
@@ -16,8 +14,6 @@ import ExploreView from "@/components/mood/exploreView";
 import ProfileView from "@/components/mood/profileView";
 import BreathingExerciseModal from "@/components/mood/breathingModel";
 import CompletionMessageModal from "@/components/mood/completion";
-
-// Import types
 import type { Mood, NavigationItem } from "@/types/moodT";
 
 export default function MoodTracker() {
@@ -151,7 +147,7 @@ export default function MoodTracker() {
           }
           return prev + 1;
         });
-      }, 6000); // 3s inhale + 3s exhale
+      }, 6000); // 3s + 3s
     }
 
     return () => {
@@ -238,7 +234,6 @@ export default function MoodTracker() {
         <Footer theme={theme} />
       </div>
 
-      {/* Toast Container */}
       <ToastContainer
         position="top-right"
         autoClose={3000}
@@ -283,7 +278,6 @@ export default function MoodTracker() {
         />
       )}
 
-      {/* Completion */}
       {showCompletionMessage && (
         <CompletionMessageModal
           theme={theme}

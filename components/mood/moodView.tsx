@@ -21,39 +21,28 @@ export default function MoodView({
   setSelectedMonth,
   moodHistory,
 }: MoodViewProps) {
-  // Get the selected mood's color
   const selectedMoodColor =
     moods.find((m) => m.id === currentMood)?.color || "#FFD93D";
 
-  // Generate calendar days for the month view
   const generateCalendarDays = () => {
     const year = selectedMonth.getFullYear();
     const month = selectedMonth.getMonth();
 
-    // Get the first day of the month
     const firstDay = new Date(year, month, 1);
-    // Get the last day of the month
     const lastDay = new Date(year, month + 1, 0);
 
-    // Calculate the day of the week for the first day (0 = Sunday, 6 = Saturday)
     let startDayOfWeek = firstDay.getDay();
-    // Adjust for Monday as first day of week
     startDayOfWeek = startDayOfWeek === 0 ? 6 : startDayOfWeek - 1;
 
-    // Create an array for all days in the month
     const days = [];
-
-    // Add empty slots for days before the 1st of the month
     for (let i = 0; i < startDayOfWeek; i++) {
       days.push({ day: null, date: null });
     }
 
-    // Add actual days of the month
     for (let day = 1; day <= lastDay.getDate(); day++) {
       const date = new Date(year, month, day);
       const dateString = date.toISOString().split("T")[0];
 
-      // Find mood for this day if it exists
       const moodForDay = moodHistory.find((m) => m.date === dateString);
 
       days.push({
@@ -63,8 +52,7 @@ export default function MoodView({
       });
     }
 
-    // Add empty slots at the end to complete the grid
-    const remainingSlots = 42 - days.length; // 6 rows of 7 days
+    const remainingSlots = 42 - days.length;
     for (let i = 0; i < remainingSlots; i++) {
       days.push({ day: null, date: null });
     }
@@ -74,7 +62,6 @@ export default function MoodView({
 
   const calendarDays = generateCalendarDays();
 
-  // Format month name for display
   const getMonthYearString = () => {
     return new Intl.DateTimeFormat("en-US", {
       month: "long",
@@ -82,7 +69,6 @@ export default function MoodView({
     }).format(selectedMonth);
   };
 
-  // Navigate through months
   const goToPreviousMonth = () => {
     setSelectedMonth(
       (prev) => new Date(prev.getFullYear(), prev.getMonth() - 1, 1)

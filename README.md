@@ -1,8 +1,8 @@
-# Mood Tracker - CodeCircuit Hackathon 2024
+# Mood Tracker - CodeCircuit Hackathon 2025
 
 A beautiful and intuitive mood tracking application built for the CodeCircuit Hackathon 2024 in the Health category. This application helps users track their daily moods, practice mindfulness through breathing exercises, and maintain their mental well-being.
 
-## 🌟 Features
+## Features
 
 - **Mood Tracking**: Record and visualize your daily moods with an intuitive interface
 - **Breathing Exercises**: Guided breathing exercises to help manage stress and anxiety
@@ -12,7 +12,7 @@ A beautiful and intuitive mood tracking application built for the CodeCircuit Ha
 - **Dark/Light Mode**: Beautiful UI with theme customization
 - **Responsive Design**: Works seamlessly on both desktop and mobile devices
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Framework**: Next.js 14
 - **Language**: TypeScript
@@ -71,33 +71,6 @@ npm run dev
 - Quick access to breathing exercises
 - Personalized recommendations
 
-## 🎨 UI/UX Features
 
-- Smooth animations and transitions
-- Intuitive navigation
-- Responsive design for all devices
-- Beautiful gradient backgrounds
-- Interactive mood selection
-- Calendar view for mood history
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- Built for CodeCircuit Hackathon 2024
-- Special thanks to the Next.js and Tailwind CSS communities
-- Inspired by the need for better mental health tracking tools
-
-## 📧 Contact
-
-For any questions or feedback, please reach out to [your-email@example.com]
-
----
-
-Made with ❤️ for CodeCircuit Hackathon 2024
+Made with ❤️ by Zareen

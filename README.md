@@ -72,10 +72,5 @@ npm run dev
 - Personalized recommendations
 
 
-## 🙏 Acknowledgments
-
-- Built for CodeCircuit Hackathon 2025
-
-
 
 Made with ❤️ by Zareen

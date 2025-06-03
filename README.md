@@ -1,6 +1,6 @@
-# Mood Tracker - CodeCircuit Hackathon 2025
+# Mood Tracker 
 
-A beautiful and intuitive mood tracking application built for the CodeCircuit Hackathon 2024 in the Health category. This application helps users track their daily moods, practice mindfulness through breathing exercises, and maintain their mental well-being.
+A beautiful and intuitive mood tracking application built to track your mood. This application helps users track their daily moods, practice mindfulness through breathing exercises, and maintain their mental well-being.
 
 ## Features
 

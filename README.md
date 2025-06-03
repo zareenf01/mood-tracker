@@ -12,16 +12,6 @@ A beautiful and intuitive mood tracking application built to track your mood. Th
 - **Dark/Light Mode**: Beautiful UI with theme customization
 - **Responsive Design**: Works seamlessly on both desktop and mobile devices
 
-## Tech Stack
-
-- **Framework**: Next.js 14
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion
-- **Icons**: Lucide Icons
-- **State Management**: React Hooks
-- **Notifications**: React Toastify
-
 ## 🚀 Getting Started
 
 1. Clone the repository:
